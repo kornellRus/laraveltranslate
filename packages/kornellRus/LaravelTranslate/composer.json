@@ -1,0 +1,42 @@
+{
+    "name": "kornellrus/laraveltranslate",
+    "description": ":package_description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "kornell",
+            "email": "kornell.ruslan.tyulyukin.93@gmail.com",
+            "homepage": "https://www.linkedin.com/in/ruslan-tyulyukin-438961163/"
+        }
+    ],
+    "homepage": "https://github.com/kornellrus/laraveltranslate",
+    "keywords": ["Laravel", "LaravelTranslate", "Translate", "google"],
+    "require": {
+        "illuminate/support": "~7|~8",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "KornellRus\\LaravelTranslate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KornellRus\\LaravelTranslate\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KornellRus\\LaravelTranslate\\LaravelTranslateServiceProvider"
+            ],
+            "aliases": {
+                "LaravelTranslate": "KornellRus\\LaravelTranslate\\Facades\\LaravelTranslate"
+            }
+        }
+    }
+}
